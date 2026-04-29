@@ -326,7 +326,7 @@
       </div>
     </div>
     <div class="feat-grid reveal">
-      <div class="feat-card"><span class="feat-num">01.1</span><span class="feat-icon">🔐</span><h3>Hybrid Encryption Engine</h3><p>RSA/ECB/PKCS1Padding for secure session key exchange paired with AES-256-GCM for message content. Every message uses a unique randomly generated 256-bit AES key — ensuring perfect forward secrecy principles.</p><span class="feat-tag">RSA + AES-256-GCM</span></div>
+      <div class="feat-card"><span class="feat-num">01.1</span><span class="feat-icon">🔐</span><h3>Hybrid Encryption Engine</h3><p>RSAPadding for secure session key exchange paired with AES-256-GCM for message content. Every message uses a unique randomly generated 256-bit AES key — ensuring perfect forward secrecy principles.</p><span class="feat-tag">RSA + AES-256-GCM</span></div>
       <div class="feat-card"><span class="feat-num">01.2</span><span class="feat-icon">🏦</span><h3>Android Keystore Storage</h3><p>Private keys are stored exclusively in the Android Keystore — hardware-backed on supported devices. Keys never leave the physical device. Decryption operations remain inside the secure enclave at all times.</p><span class="feat-tag">Hardware-Backed TEE</span></div>
       <div class="feat-card"><span class="feat-num">01.3</span><span class="feat-icon">🔄</span><h3>Perfect Forward Secrecy</h3><p>New AES keys and unique Initialization Vectors are generated for every single message. Even if one session key is ever compromised, past and future messages remain completely unaffected.</p><span class="feat-tag">Per-Message Keys · Unique IVs</span></div>
       <div class="feat-card"><span class="feat-num">01.4</span><span class="feat-icon">💬</span><h3>Real-Time Messaging UI</h3><p>Full-featured real-time conversation list with live updates. Interactive chat screens with message state indicators. New conversation creation and seamless contact discovery built into the interface.</p><span class="feat-tag">Live · Reactive · Compose</span></div>
@@ -483,7 +483,7 @@ gen.initialize(
       <div class="c-step"><div class="sn">STEP 07</div><div class="si">✅</div><div class="sl">GCM Verify</div><div class="sd">Auth Tag ✓</div></div>
     </div>
     <div class="c-tags reveal">
-      <div class="ctb"><div class="cl">ASYMMETRIC LAYER</div><div class="cv">RSA/ECB/PKCS1</div><div class="cs">2048-bit · Key Exchange Only</div></div>
+      <div class="ctb"><div class="cl">ASYMMETRIC LAYER</div><div class="cv">RSA</div><div class="cs">2048-bit · Key Exchange Only</div></div>
       <div class="ctb gr"><div class="cl">SYMMETRIC LAYER</div><div class="cv">AES/GCM/NoPadding</div><div class="cs">256-bit · 12-byte IV · AEAD</div></div>
       <div class="ctb pu"><div class="cl">STORAGE LAYER</div><div class="cv">Android Keystore</div><div class="cs">Hardware TEE · Non-Extractable</div></div>
     </div>
