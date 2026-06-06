@@ -237,6 +237,9 @@
   .team-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--cyan));margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-size:1.5rem;border:2px solid rgba(139,92,246,0.3);}
   .team-card h4{font-family:'Orbitron',monospace;font-size:0.85rem;color:#fff;margin-bottom:0.35rem;}
   .team-card .role{font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--cyan);letter-spacing:0.1em;}
+  .team-linkedin{display:inline-flex;align-items:center;gap:0.4rem;margin-top:0.85rem;font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--dim);text-decoration:none;letter-spacing:0.06em;border:1px solid rgba(0,229,255,0.15);padding:0.3rem 0.75rem;transition:all 0.3s;}
+  .team-linkedin:hover{color:var(--cyan);border-color:rgba(0,229,255,0.5);background:rgba(0,229,255,0.06);text-shadow:0 0 8px var(--cyan);}
+  .team-linkedin svg{flex-shrink:0;}
 
   /* CONTACT SECTION */
   #contact{background:var(--bg2);}
@@ -279,7 +282,6 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">
-    <!-- SVG Lock Logo (inline, no external dependency) -->
     <div class="logo-icon">
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="7" y="16" width="22" height="16" rx="3" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
@@ -374,7 +376,6 @@
       <p class="sec-desc">CryptoTalk is a fully functional high-security messaging platform. Every feature below is implemented and operational — from hardware-backed encryption to functional decoy UIs.</p>
     </div>
 
-    <!-- CATEGORY 1 -->
     <div class="reveal" style="margin-top:4rem;">
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5px;">
         <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--cyan);letter-spacing:0.2em;text-transform:uppercase;padding:0.4rem 1rem;border:1px solid rgba(0,229,255,0.2);background:rgba(0,229,255,0.04);">01 · Secure Messaging &amp; Encryption</div>
@@ -388,7 +389,6 @@
       <div class="feat-card"><span class="feat-num">01.4</span><span class="feat-icon">💬</span><h3>Real-Time Messaging UI</h3><p>Full-featured real-time conversation list with live updates. Interactive chat screens with message state indicators. New conversation creation and seamless contact discovery built into the interface.</p><span class="feat-tag">Live · Reactive · Compose</span></div>
     </div>
 
-    <!-- CATEGORY 2 -->
     <div class="reveal" style="margin-top:3rem;">
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5px;">
         <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--purple);letter-spacing:0.2em;text-transform:uppercase;padding:0.4rem 1rem;border:1px solid rgba(139,92,246,0.2);background:rgba(139,92,246,0.04);">02 · Stealth &amp; Disguise Mode</div>
@@ -401,7 +401,6 @@
       <div class="feat-card"><span class="feat-num">02.3</span><span class="feat-icon">⚙</span><h3>Disguise Settings Panel</h3><p>A dedicated, in-app settings panel to configure, preview, and apply stealth modes. Manage which disguise is active, change it at any time, and confirm the change takes effect on the home screen instantly.</p><span class="feat-tag">Management Interface</span></div>
     </div>
 
-    <!-- CATEGORY 3 -->
     <div class="reveal" style="margin-top:3rem;">
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5px;">
         <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--green);letter-spacing:0.2em;text-transform:uppercase;padding:0.4rem 1rem;border:1px solid rgba(0,255,136,0.2);background:rgba(0,255,136,0.04);">03 · Advanced Security &amp; Data Protection</div>
@@ -415,7 +414,6 @@
       <div class="feat-card"><span class="feat-num">03.4</span><span class="feat-icon">🔑</span><h3>Safety Numbers</h3><p>A mechanism to verify the authenticity of a contact's public keys — preventing Man-in-the-Middle (MITM) attacks. Users can compare safety numbers out-of-band to confirm a secure, unintercepted channel.</p><span class="feat-tag">MITM Prevention · Key Verification</span></div>
     </div>
 
-    <!-- CATEGORY 4 -->
     <div class="reveal" style="margin-top:3rem;">
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5px;">
         <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#ffaa00;letter-spacing:0.2em;text-transform:uppercase;padding:0.4rem 1rem;border:1px solid rgba(255,170,0,0.2);background:rgba(255,170,0,0.04);">04 · User Identity &amp; Customization</div>
@@ -486,18 +484,30 @@
         <h4>Shaila Mandkulkar</h4>
         <div class="role">CO-FOUNDER · SECURITY</div>
         <p style="font-size:0.8rem;color:#6a8090;margin-top:0.75rem;line-height:1.6;">Cryptography architecture & threat modeling. Designed the zero-trust security framework.</p>
+        <a class="team-linkedin" href="https://www.linkedin.com/in/shaila-mandkulkar-228659411/" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
         <div class="team-avatar">👨‍💻</div>
         <h4>Karan Lingayat</h4>
         <div class="role">CO-FOUNDER · ANDROID</div>
         <p style="font-size:0.8rem;color:#6a8090;margin-top:0.75rem;line-height:1.6;">Android Keystore TEE integration & encryption pipeline. Built the core crypto engine.</p>
+        <a class="team-linkedin" href="https://www.linkedin.com/in/karan-lingayat-066420330/" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
         <div class="team-avatar">👨‍🎨</div>
         <h4>Parth Kelaskar</h4>
         <div class="role">CO-FOUNDER · UI/UX</div>
         <p style="font-size:0.8rem;color:#6a8090;margin-top:0.75rem;line-height:1.6;">Jetpack Compose UI, disguise mode UX, and the premium dark theme engine.</p>
+        <a class="team-linkedin" href="https://www.linkedin.com/in/parth-kelaskar-408735313/" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
     </div>
   </div>
@@ -673,7 +683,6 @@ gen.initialize(
       </tbody>
     </table>
 
-    <!-- WHY CRYPTOTALK STANDS OUT -->
     <div class="reveal" style="margin-top:5rem;">
       <div class="sec-label">Why CryptoTalk Stands Out</div>
       <h2 class="sec-title" style="font-size:clamp(1.5rem,3.5vw,2.5rem);margin-bottom:3rem;">Four Reasons No Other App<br/>Comes <span class="hl">Close</span></h2>
@@ -782,9 +791,7 @@ gen.initialize(
 
     <div style="display:flex;justify-content:center;" class="reveal">
       <div class="dl-card" style="max-width:820px;width:100%;">
-        <!-- TOP ROW -->
         <div style="display:flex;gap:3rem;align-items:center;flex-wrap:wrap;justify-content:center;width:100%;position:relative;z-index:1;margin-bottom:2.5rem;">
-          <!-- QR CODE -->
           <div style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
             <div style="position:relative;padding:12px;background:#04060d;border:1px solid rgba(0,229,255,0.3);box-shadow:0 0 30px rgba(0,229,255,0.12);">
               <div style="position:absolute;top:-1px;left:-1px;width:18px;height:18px;border-top:2px solid var(--cyan);border-left:2px solid var(--cyan);"></div>
@@ -796,7 +803,6 @@ gen.initialize(
             <div style="font-family:'JetBrains Mono',monospace;font-size:0.62rem;color:var(--dim);letter-spacing:0.12em;text-align:center;">SCAN TO DOWNLOAD APK<br/><span style="color:var(--cyan);">v1.0.0 · Android 8.0+</span></div>
           </div>
 
-          <!-- APP INFO -->
           <div style="text-align:left;flex:1;min-width:220px;">
             <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--dim);letter-spacing:0.2em;margin-bottom:1rem;">AVAILABLE NOW · GITHUB RELEASES</div>
             <div style="font-family:'Orbitron',monospace;font-size:1.8rem;font-weight:900;color:#fff;letter-spacing:0.06em;line-height:1;">CRYPTO<span style="color:var(--cyan);">TALK</span></div>
@@ -811,7 +817,6 @@ gen.initialize(
           </div>
         </div>
 
-        <!-- DOWNLOAD BUTTONS -->
         <div class="dl-btns" style="width:100%;position:relative;z-index:1;">
           <a class="dl-btn" href="https://github.com/karan942006/CryptoTalkApp/releases/download/CryptoTalk/app-debug.apk" download="CryptoTalk.apk" style="border-color:var(--cyan);background:rgba(0,229,255,0.08);flex:1;min-width:200px;position:relative;overflow:hidden;">
             <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);"></div>
@@ -829,7 +834,6 @@ gen.initialize(
           </a>
         </div>
 
-        <!-- URL DISPLAY -->
         <div style="position:relative;z-index:1;margin-top:2rem;width:100%;background:rgba(0,0,0,0.3);border:1px solid rgba(0,229,255,0.1);padding:0.75rem 1.25rem;display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
           <span style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:0.1em;white-space:nowrap;">Direct Link</span>
           <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--cyan);word-break:break-all;flex:1;">https://github.com/karan942006/CryptoTalk1/releases/download/v1.0.0/CryptoTalk.apk</span>
